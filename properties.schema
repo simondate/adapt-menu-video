@@ -13,7 +13,7 @@
         "course": {
           "type": "object",
           "properties": {
-            "_menuBackground": {
+            "_menuVideo": {
               "type": "object",
               "required": false,
               "legend": "Menu Background",

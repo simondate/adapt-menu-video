@@ -1,18 +1,18 @@
 {
-    "name": "adapt-menu-background",
-    "repository": "git://github.com/KingsOnline/adapt-menu-background",
-    "framework": "^2.0.0",
-    "version": "0.2.11",
-    "homepage": "https://github.com/kingsonline/adapt-menu-background",
-    "issues": "https://github.com/kingsonline/adapt-menu-background/issues",
+    "name": "adapt-menu-video",
+    "repository": "git://github.com/simondate/adapt-menu-video",
+    "framework": ">=2.0.0",
+    "version": "0.0.1",
+    "homepage": "https://github.com/kingsonline/adapt-menu-video",
+    "issues": "https://github.com/kingsonline/adapt-menu-video/issues",
     "displayName": "Menu Background",
     "extension": "menuBackground",
     "description": "Allows image to be used as a background",
-    "main": "/js/adapt-menu-background.js",
+    "main": "/js/adapt-menu-video.js",
     "keywords": [
         "adapt-plugin",
         "adapt-extension"
     ],
     "license": "GPLv3",
-    "targetAttribute": "_menuBackground"
+    "targetAttribute": "_menuVideo"
 }
