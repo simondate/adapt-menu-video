@@ -7,28 +7,18 @@ define(["coreJS/adapt"], function(Adapt) {
 
         className: "extension",
 
-        initialize: function() {}
+        initialize: function() {
+          this.remove();
+          console.log(this.model);
+          var template = Handlebars.templates.menuVideo;
+          $('.menu-item-graphic').first().html(this.$el.html(template(this.model)));
+        }
     });
 
-    Adapt.on("pageView:ready", function() {
-        if(!Adapt.course.get('_menuVideo')) return;
-        if (Adapt.course.get('_menuVideo')._menuHeader._applyToPage || !(Adapt.course.get('_menuVideo')._menuHeader._link === "")) {
-          $('.page-header').css('background', 'url(' + Adapt.course.get('_menuVideo')._menuHeader._link + ')');
-          $('.page-header').css('background-size', 'cover');
-        }
-    });
+
     Adapt.on("menuView:ready", function() {
-      if(!Adapt.course.get('_menuVideo')) return;
-        if (!(Adapt.course.get('_menuVideo')._menuHeader._link === "")) {
-            $('.menu-header').css('background', 'url(' + Adapt.course.get('_menuVideo')._menuHeader._link + ')');
-            $('.menu-header').css('background-size', 'cover');
-        }
-        if (!(Adapt.course.get('_menuVideo')._backgroundLink === "")) {
-            $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuVideo')._backgroundLink + ')');
-            $('.menu-container-inner').css('padding-bottom', '22%');
-            $('.menu-container-inner').css('background-size', 'cover');
-            $('.menu-container-inner').css('background-position-y', '300px');
-        }
+      if(!Adapt.course.get('_menuVideo') || !Adapt.course.get('_menuVideo')._isEnabled) return;
+		  new menuVideo({model: Adapt.course.get('_menuVideo')});
     });
 
     return menuVideo;
