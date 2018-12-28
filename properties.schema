@@ -16,35 +16,29 @@
             "_menuVideo": {
               "type": "object",
               "required": false,
-              "legend": "Menu Background",
+              "legend": "Menu video",
               "properties": {
-                "_menuHeader": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Enable menu video",
+                  "inputType": "Checkbox"
+                },
+                "_media": {
                   "type": "object",
-                  "required": false,
-                  "title": "Menu Header background",
+                  "required": true,
+                  "title": "Media",
                   "properties": {
-                    "_link": {
+                    "mp4": {
                       "type": "string",
                       "required": false,
                       "default": "",
-                      "inputType": "Asset:image",
-                      "title": "Menu header image"
-                    },
-                    "_applyToPage": {
-                      "default": false,
-                      "inputType": "Checkbox",
-                      "type": "boolean",
-                      "required": false,
-                      "title": "Apply to page too?"
+                      "title": "MP4 Link",
+                      "inputType": "Asset:video",
+                      "validators": [],
+                      "help": "Link to an MP4 video"
                     }
                   }
-                },
-                "_backgroundLink": {
-                  "type": "string",
-                  "required": false,
-                  "default": "",
-                  "inputType": "Asset:image",
-                  "title": "Menu page background image"
                 }
               }
             }
