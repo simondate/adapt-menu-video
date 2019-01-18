@@ -2,7 +2,7 @@
     "name": "adapt-menu-video",
     "repository": "git://github.com/simondate/adapt-menu-video",
     "framework": ">=2.0.0",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "homepage": "https://github.com/simondate/adapt-menu-video",
     "issues": "https://github.com/simondate/adapt-menu-video/issues",
     "displayName": "Menu Video",
