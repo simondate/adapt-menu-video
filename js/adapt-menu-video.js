@@ -9,7 +9,6 @@ define(["coreJS/adapt"], function(Adapt) {
 
         initialize: function() {
           this.remove();
-          console.log(this.model);
           var template = Handlebars.templates.menuVideo;
           $('.menu-item-graphic').first().html(this.$el.html(template(this.model)));
         }

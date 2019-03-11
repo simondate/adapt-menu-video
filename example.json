@@ -1,4 +1,8 @@
 // To go in Course.json
 "_menuVideo": {
-  "_isEnabled": true
+  "_isEnabled": true,
+  "_media": {
+    "mp4": "",
+    "source": ""
+  }
 }

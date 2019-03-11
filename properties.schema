@@ -36,7 +36,16 @@
                       "title": "MP4 Link",
                       "inputType": "Asset:video",
                       "validators": [],
-                      "help": "Link to an MP4 video"
+                      "help": "Link to an mp4 file that's been uploaded with the course"
+                    },
+                    "source": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Source URL",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Enter an external link, such as a YouTube or Vimeo URL"
                     }
                   }
                 }

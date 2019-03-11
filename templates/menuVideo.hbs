@@ -1,7 +1,13 @@
 <div class="menu-video">
   <div class="menu-video-inner">
-    <video width="100%" controls>
-    <source src={{_media.mp4}} type="video/mp4">
-    </video>
+  {{#if _media.mp4}}
+    <video width="100%" controls="controls">
+        <source src="{{_media.mp4}}" type="video/mp4" />
+  </video>
+  {{else}}
+  <div class='iframe-holder'>
+  <iframe class='iframe-video' width="100%" src="{{_media.source}}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  {{/if}}
   </div>
 </div>
