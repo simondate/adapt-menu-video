@@ -1,6 +1,5 @@
 define(["coreJS/adapt"], function(Adapt) {
 
-    var Adapt = require('coreJS/adapt');
     var Backbone = require('backbone');
 
     var menuVideo = Backbone.View.extend({
