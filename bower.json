@@ -2,11 +2,11 @@
     "name": "adapt-menu-video",
     "repository": "git://github.com/simondate/adapt-menu-video",
     "framework": ">=2.0.0",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "homepage": "https://github.com/simondate/adapt-menu-video",
     "issues": "https://github.com/simondate/adapt-menu-video/issues",
     "displayName": "Menu Video",
-    "extension": "menuVideo",
+    "extension": "MenuVideo",
     "description": "Allows a video to be embeded on the menu page.",
     "main": "/js/adapt-menu-video.js",
     "keywords": [

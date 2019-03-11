@@ -10,7 +10,7 @@ define(["coreJS/adapt"], function(Adapt) {
         initialize: function() {
           this.remove();
           var template = Handlebars.templates.menuVideo;
-          $('.menu-item-graphic').first().html(this.$el.html(template(this.model)));
+          $('.menu-item.nth-child-1').find('.menu-item-graphic').html(this.$el.html(template(this.model)));
         }
     });
 
